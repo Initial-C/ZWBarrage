@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ZWBarrage"
   s.version      = "0.0.1"
-  s.summary      = "ZWBarrage is a third API for my daily work"
+  s.summary      = "ZWBarrage is simple and easy to use, expand the individual strong base barrage"
   s.homepage     = "https://github.com/Initial-C"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Initial-C" => "iwilliamchang@outlook.com" }
