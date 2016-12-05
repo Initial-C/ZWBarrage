@@ -1,0 +1,16 @@
+PODS:
+  - ZWBarrage (0.0.1)
+
+DEPENDENCIES:
+  - ZWBarrage (from `../`)
+
+EXTERNAL SOURCES:
+  ZWBarrage:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZWBarrage: c70ab9bab0141aae25e0dc4732b0f1bcd559cc6c
+
+PODFILE CHECKSUM: ee4b6195c3f55996beb1ab18736acff2e07bc32b
+
+COCOAPODS: 1.1.1

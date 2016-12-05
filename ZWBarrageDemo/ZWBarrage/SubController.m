@@ -7,6 +7,7 @@
 //
 
 #import "SubController.h"
+#import "ViewController.h"
 
 @interface SubController ()
 
@@ -24,9 +25,9 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
     UIButton *dismissBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [dismissBtn setTitle:@"Dismiss" forState:UIControlStateNormal];
+    [dismissBtn setTitle:@"Pop Back" forState:UIControlStateNormal];
     [dismissBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    dismissBtn.frame = CGRectMake(160, 200, 80, 30);
+    dismissBtn.frame = CGRectMake(150, 200, 80, 30);
     [dismissBtn addTarget:self action:@selector(dismiss) forControlEvents:UIControlEventTouchUpInside];
     dismissBtn.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:dismissBtn];
@@ -41,7 +42,7 @@
     
 }
 - (void)dismiss {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

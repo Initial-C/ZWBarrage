@@ -13,14 +13,16 @@
 		52552E971DEB3BA300D3A931 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52552E951DEB3BA300D3A931 /* Main.storyboard */; };
 		52552E991DEB3BA300D3A931 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52552E981DEB3BA300D3A931 /* Assets.xcassets */; };
 		52552E9C1DEB3BA400D3A931 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52552E9A1DEB3BA400D3A931 /* LaunchScreen.storyboard */; };
-		52552EA51DEB3BDC00D3A931 /* BarrageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52552EA41DEB3BDC00D3A931 /* BarrageView.m */; };
 		52552EA81DEB3C5000D3A931 /* AnimationLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52552EA71DEB3C5000D3A931 /* AnimationLayer.m */; };
 		52552EAE1DEB3CBF00D3A931 /* SubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52552EAD1DEB3CBF00D3A931 /* SubController.m */; };
 		52552EB01DEB3EDF00D3A931 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52552EAF1DEB3EDF00D3A931 /* house.jpg */; };
 		52552EB21DEB3EE400D3A931 /* file in Resources */ = {isa = PBXBuildFile; fileRef = 52552EB11DEB3EE400D3A931 /* file */; };
+		65EEBCBED0B38C81DEC53FDB /* libPods-ZWBarrage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18078826143A4FF147B70D8A /* libPods-ZWBarrage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18078826143A4FF147B70D8A /* libPods-ZWBarrage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZWBarrage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2716D7ACC1050D8A6B257E66 /* Pods-ZWBarrage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWBarrage.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZWBarrage/Pods-ZWBarrage.release.xcconfig"; sourceTree = "<group>"; };
 		52552E891DEB3BA300D3A931 /* ZWBarrage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWBarrage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52552E8D1DEB3BA300D3A931 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52552E8F1DEB3BA300D3A931 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,14 +33,13 @@
 		52552E981DEB3BA300D3A931 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52552E9B1DEB3BA400D3A931 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52552E9D1DEB3BA400D3A931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52552EA31DEB3BDC00D3A931 /* BarrageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageView.h; sourceTree = "<group>"; };
-		52552EA41DEB3BDC00D3A931 /* BarrageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageView.m; sourceTree = "<group>"; };
 		52552EA61DEB3C5000D3A931 /* AnimationLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationLayer.h; sourceTree = "<group>"; };
 		52552EA71DEB3C5000D3A931 /* AnimationLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationLayer.m; sourceTree = "<group>"; };
 		52552EAC1DEB3CBF00D3A931 /* SubController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubController.h; sourceTree = "<group>"; };
 		52552EAD1DEB3CBF00D3A931 /* SubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController.m; sourceTree = "<group>"; };
 		52552EAF1DEB3EDF00D3A931 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		52552EB11DEB3EE400D3A931 /* file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = file; sourceTree = "<group>"; };
+		7C2CC379E4BE8A50A17C324A /* Pods-ZWBarrage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWBarrage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZWBarrage/Pods-ZWBarrage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65EEBCBED0B38C81DEC53FDB /* libPods-ZWBarrage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +59,8 @@
 			children = (
 				52552E8B1DEB3BA300D3A931 /* ZWBarrage */,
 				52552E8A1DEB3BA300D3A931 /* Products */,
+				BFA653AAD60FD8E8DE941E6D /* Pods */,
+				9E8B085F9C6F13C82B2037F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +81,6 @@
 				52552E931DEB3BA300D3A931 /* ViewController.m */,
 				52552EAC1DEB3CBF00D3A931 /* SubController.h */,
 				52552EAD1DEB3CBF00D3A931 /* SubController.m */,
-				52552EA31DEB3BDC00D3A931 /* BarrageView.h */,
-				52552EA41DEB3BDC00D3A931 /* BarrageView.m */,
 				52552EA61DEB3C5000D3A931 /* AnimationLayer.h */,
 				52552EA71DEB3C5000D3A931 /* AnimationLayer.m */,
 				52552E951DEB3BA300D3A931 /* Main.storyboard */,
@@ -100,6 +102,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9E8B085F9C6F13C82B2037F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18078826143A4FF147B70D8A /* libPods-ZWBarrage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA653AAD60FD8E8DE941E6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C2CC379E4BE8A50A17C324A /* Pods-ZWBarrage.debug.xcconfig */,
+				2716D7ACC1050D8A6B257E66 /* Pods-ZWBarrage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52552EA01DEB3BA400D3A931 /* Build configuration list for PBXNativeTarget "ZWBarrage" */;
 			buildPhases = (
+				F6BCDD46E604E04B1DFC8BEF /* [CP] Check Pods Manifest.lock */,
 				52552E851DEB3BA300D3A931 /* Sources */,
 				52552E861DEB3BA300D3A931 /* Frameworks */,
 				52552E871DEB3BA300D3A931 /* Resources */,
+				9E59771F9C389D0D932F408B /* [CP] Embed Pods Frameworks */,
+				130554952B9A03157A6D6075 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +191,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		130554952B9A03157A6D6075 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZWBarrage/Pods-ZWBarrage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E59771F9C389D0D932F408B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZWBarrage/Pods-ZWBarrage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BCDD46E604E04B1DFC8BEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52552E851DEB3BA300D3A931 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -179,7 +249,6 @@
 				52552E911DEB3BA300D3A931 /* AppDelegate.m in Sources */,
 				52552EA81DEB3C5000D3A931 /* AnimationLayer.m in Sources */,
 				52552E8E1DEB3BA300D3A931 /* main.m in Sources */,
-				52552EA51DEB3BDC00D3A931 /* BarrageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +364,7 @@
 		};
 		52552EA11DEB3BA400D3A931 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C2CC379E4BE8A50A17C324A /* Pods-ZWBarrage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8SYCX67H7W;
@@ -307,6 +377,7 @@
 		};
 		52552EA21DEB3BA400D3A931 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2716D7ACC1050D8A6B257E66 /* Pods-ZWBarrage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8SYCX67H7W;
@@ -336,6 +407,7 @@
 				52552EA21DEB3BA400D3A931 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

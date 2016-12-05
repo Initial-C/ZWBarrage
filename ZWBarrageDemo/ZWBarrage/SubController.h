@@ -10,7 +10,6 @@
 
 @interface SubController : UIViewController
 
-
 @property (strong, nonatomic) NSString *topicName;
 @property (strong, nonatomic) NSString *topicID;
 
