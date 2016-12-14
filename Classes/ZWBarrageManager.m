@@ -20,6 +20,10 @@
 
 @property (strong, nonatomic) NSTimer *timer;
 
+@property (nonatomic, strong) NSDate *dateNow;
+
+@property (nonatomic, strong) NSDate *dateLastTime;
+
 @end
 
 @implementation ZWBarrageManager
@@ -51,6 +55,26 @@ static ZWBarrageManager *instance;
     }
     return self;
 }
+
+- (NSDate *)dateNow {
+    if (_dateNow == nil) {
+        _dateNow = [NSDate date];
+        NSTimeZone *zone = [NSTimeZone systemTimeZone];
+        NSInteger interval = [zone secondsFromGMTForDate:_dateNow];
+        _dateNow = [_dateNow dateByAddingTimeInterval:interval];
+    }
+    return _dateNow;
+}
+- (NSDate *)dateLastTime {
+    if (_dateLastTime == nil) {
+        _dateLastTime = [NSDate date];
+        NSTimeZone *zone = [NSTimeZone systemTimeZone];
+        NSInteger interval = [zone secondsFromGMTForDate:_dateLastTime];
+        _dateLastTime = [_dateLastTime dateByAddingTimeInterval:interval];
+    }
+    return _dateLastTime;
+}
+
 
 - (void)dealloc {
     if ([_timer isValid]){
@@ -86,15 +110,26 @@ static ZWBarrageManager *instance;
 #pragma mark - method
 
 - (void)buildBarrageScene {
-    /* build barrage model */
-    if (![_delegate  respondsToSelector:@selector(barrageManagerDataSource)]) {
+    _dateNow = [NSDate date];
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSInteger interval = [zone secondsFromGMTForDate:_dateNow];
+    _dateNow = [_dateNow dateByAddingTimeInterval:interval];
+    double intervalTime = [_dateNow timeIntervalSinceDate:self.dateLastTime];
+    _dateLastTime = _dateNow;
+    if (intervalTime > (_refreshInterval - 0.2f) || intervalTime < 0) {
+        
+        /* build barrage model */
+        if (![_delegate  respondsToSelector:@selector(barrageManagerDataSource)]) {
+            return;
+        }
+        id data = [_delegate barrageManagerDataSource];
+        if (!data) {
+            return;
+        }
+        [self showWithData:data];
+    } else {
         return;
     }
-    id data = [_delegate barrageManagerDataSource];
-    if (!data) {
-        return;
-    }
-    [self showWithData:data];
 }
 
 - (void)showBarrageWithDataSource:(id)data {
