@@ -255,7 +255,7 @@
             // --BarrageDisplayTypeDefault--        // TODO:  可设置圆角之类的
             _voteButton.hidden = true;
             _imageView.hidden = true;
-            _titleLabel.edgeInsets = UIEdgeInsetsMake(10, 33, 10, 33);
+            _titleLabel.edgeInsets = UIEdgeInsetsMake(8, 18, 8, 18);
             [_titleLabel sizeToFit];
             _titleLabel.layer.cornerRadius = _titleLabel.frame.size.height * 0.5;
             self.bounds = _titleLabel.bounds;
