@@ -71,11 +71,10 @@
 - (id)barrageManagerDataSource {
     int a = arc4random() % 10000;
     NSString *str = [NSString stringWithFormat:@" %d年太久, 只争朝夕", a];
-    
+    UIImage *backImage = [UIImage imageNamed:@"tx_danmu"];      // 设置弹幕个性背景图
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:str];
     [attr addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0, str.length)];
-    
-    ZWBarrageModel *m = [[ZWBarrageModel alloc] initWithBarrageContent:attr];
+    ZWBarrageModel *m = [[ZWBarrageModel alloc] initWithNumberID:0 BarrageContent:attr Author:nil Object:nil BackImage:backImage];
     m.displayLocation = _manager.displayLocation;
     m.direction       = _manager.scrollDirection;
     m.barrageType = ZWBarrageDisplayTypeBackImageView;       // 显示模式以数据源内设置为准

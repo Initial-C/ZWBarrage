@@ -18,23 +18,26 @@
         self.message = [[NSMutableAttributedString alloc] initWithString:@""];
         self.author = nil;
         self.object = nil;
-        
+        self.backImage = nil;
     }
     return self;
 }
 
-- (instancetype)initWithNumberID:(NSInteger)numID BarrageContent:(NSMutableAttributedString *)message Author:(nullable id)author Object:(nullable id)object {
+- (instancetype)initWithNumberID:(NSInteger)numID BarrageContent:(NSMutableAttributedString *)message Author:(nullable id)author Object:(nullable id)object BackImage:(nullable id)image {
     ZWBarrageModel *model = [[ZWBarrageModel alloc] init];
+    if (numID == nil) {
+        numID = 0;
+    }
     model.numberID = numID;
     model.message = message;
     model.author = author;
     model.object = object;
-    
+    model.backImage = image;
     return model;
 }
 
 - (instancetype)initWithNumberID:(NSInteger)numID BarrageContent:(NSMutableAttributedString *)message {
-    return [self initWithNumberID:numID BarrageContent:message Author:nil Object:nil];
+    return [self initWithNumberID:numID BarrageContent:message Author:nil Object:nil BackImage:nil];
 }
 
 - (instancetype)initWithBarrageContent:(NSMutableAttributedString *)message {

@@ -51,6 +51,9 @@ NS_ASSUME_NONNULL_BEGIN
 // goal object
 @property (strong, nonatomic, nullable) id object;
 
+// back image
+@property (nonatomic, strong, nullable) id backImage;
+
 //ZWBarrageDisplayTypeImage and ZWBarrageDisplayTypeVote need to set height
 @property (assign, nonatomic) float ZW_hight;
 
@@ -72,7 +75,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param object goal object
  @return init  ZWBarrageModel
  */
-- (instancetype)initWithNumberID:(NSInteger)numID BarrageContent:(NSMutableAttributedString *)message Author:(nullable id)author Object:(nullable id)object;
+- (instancetype)initWithNumberID:(NSInteger)numID BarrageContent:(NSMutableAttributedString *)message Author:(nullable id)author Object:(nullable id)object BackImage: (nullable id)image;
 /**
  init  ZWBarrageModel
  

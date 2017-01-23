@@ -40,9 +40,8 @@
 
 - (void)setupUI {
     // backImageView
-    _backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tx_danmu"]];
+    _backImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     _backImageView.hidden = true;
-    _backImageView.frame = self.bounds;
     [self addSubview:_backImageView];
     // label
     _titleLabel = [[ZWEdgeInsetsLabel alloc] initWithFrame: self.bounds];
@@ -258,6 +257,10 @@
             _voteButton.hidden = true;
             _imageView.hidden = true;
             _backImageView.hidden = false;
+            if (_model.backImage !=nil) {
+                UIImage *img = (UIImage *)_model.backImage;
+                _backImageView.image = img;
+            }
             _titleLabel.edgeInsets = UIEdgeInsetsMake(8, 54, 8, 54);
             [_titleLabel sizeToFit];
             _titleLabel.layer.cornerRadius = 13;
