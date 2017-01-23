@@ -39,6 +39,11 @@
 }
 
 - (void)setupUI {
+    // backImageView
+    _backImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tx_danmu"]];
+    _backImageView.hidden = true;
+    _backImageView.frame = self.bounds;
+    [self addSubview:_backImageView];
     // label
     _titleLabel = [[ZWEdgeInsetsLabel alloc] initWithFrame: self.bounds];
     _titleLabel.font = [UIFont systemFontOfSize:16.0];
@@ -57,10 +62,9 @@
     [self addSubview:_voteButton];
     
     //imageView
-    _imageView  = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x,self.bounds.origin.y, 30, 30)];
+    _imageView  = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.origin.x,self.bounds.origin.y, 28, 28)];
     _imageView.hidden = true;
     [self addSubview:_imageView];
-    
 }
 // Add to SuperView and start scrolling
 - (void)scroll {
@@ -180,7 +184,6 @@
             titleLabelframe.origin.y = CGRectGetMinY(_imageView.frame) + (_imageView.frame.size.height - titleLabelframe.size.height)/2;
             _titleLabel.frame = titleLabelframe;
             
-            
             self.bounds = CGRectMake(0, 0, CGRectGetWidth(_imageView.frame) + CGRectGetWidth(_titleLabel.frame), CGRectGetHeight(_imageView.frame));
             
             break;
@@ -251,11 +254,24 @@
             self.bounds = _titleLabel.bounds;
             
             break;
+        case ZWBarrageDisplayTypeBackImageView:
+            _voteButton.hidden = true;
+            _imageView.hidden = true;
+            _backImageView.hidden = false;
+            _titleLabel.edgeInsets = UIEdgeInsetsMake(8, 54, 8, 54);
+            [_titleLabel sizeToFit];
+            _titleLabel.layer.cornerRadius = 13;
+            _titleLabel.backgroundColor = [UIColor clearColor];
+            _titleLabel.layer.borderColor = [UIColor clearColor].CGColor;
+            _titleLabel.layer.borderWidth = 0.0;
+            _titleLabel.layer.masksToBounds = YES;
+            self.bounds = _titleLabel.bounds;
+            break;
         default:
             // --BarrageDisplayTypeDefault--        // TODO:  可设置圆角之类的
             _voteButton.hidden = true;
             _imageView.hidden = true;
-            _titleLabel.edgeInsets = UIEdgeInsetsMake(8, 18, 8, 18);
+            _titleLabel.edgeInsets = UIEdgeInsetsMake(6, 18, 6, 18);
             [_titleLabel sizeToFit];
             _titleLabel.layer.cornerRadius = _titleLabel.frame.size.height * 0.5;
             self.bounds = _titleLabel.bounds;
@@ -265,6 +281,7 @@
     
     //Calculate a barrage of random position
     self.frame = [self calculateBarrageSceneFrameWithModel:_model];
+    _backImageView.frame = self.bounds;
 }
 
 //MARK: The calculation of random barrage Frame

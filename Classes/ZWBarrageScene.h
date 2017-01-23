@@ -30,6 +30,8 @@ typedef void(^AnimationDidStopBlock)(ZWBarrageScene *scene);
 
 @property (strong, nonatomic) UIImageView *imageView;
 
+@property (nonatomic, strong) UIImageView *backImageView;
+
 @property (copy, nonatomic) AnimationDidStopBlock animationDidStopBlock;
 
 - (void)scroll;

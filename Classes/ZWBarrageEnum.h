@@ -48,6 +48,7 @@ typedef NS_ENUM(NSInteger, ZWBarrageDisplayType) {
     ZWBarrageDisplayTypeImage,        /* text and image */
     ZWBarrageDisplayTypeCustomView,   /* Custom View  */
     ZWBarrageDisplayTypeOther,        /* other        */
+    ZWBarrageDisplayTypeBackImageView /* Back Image View */
 };
 
 // Clear policy for receiving memory warning

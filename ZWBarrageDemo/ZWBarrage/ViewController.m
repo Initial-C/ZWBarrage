@@ -58,14 +58,12 @@
     _showView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 250)];
     _showView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:_showView];
-    
     _manager.bindingView = _showView;
     _manager.delegate = self;
     _manager.scrollSpeed = 50;
     _manager.memoryMode = ZWBarrageMemoryWarningModeHalf;               // 弹幕内存管理模式
     _manager.refreshInterval = 2.0f;
     _manager.scrollDirection = ZWBarrageScrollDirectRightToLeft;        // 弹幕方向
-    
     [_manager startScroll];
 }
 // ----- step : 6
@@ -80,7 +78,7 @@
     ZWBarrageModel *m = [[ZWBarrageModel alloc] initWithBarrageContent:attr];
     m.displayLocation = _manager.displayLocation;
     m.direction       = _manager.scrollDirection;
-    m.barrageType = ZWBarrageDisplayTypeDefault;       // 显示模式以数据源内设置为准
+    m.barrageType = ZWBarrageDisplayTypeBackImageView;       // 显示模式以数据源内设置为准
 //    m.object = [UIImage imageNamed:[NSString stringWithFormat:@"Vote_%d",arc4random() % 10]];       // 如果为投票模式, 必须如此设置
     return m;
 
