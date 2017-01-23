@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZWBarrage"
-  s.version      = "0.0.5"
+  s.version      = "0.0.5.1"
   s.summary      = "ZWBarrage is simple and easy to use, expand the individual strong base barrage"
   s.homepage     = "https://github.com/Initial-C"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
