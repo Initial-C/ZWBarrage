@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic) ZWBarrageManager *manager;    // ----- step : 3
 @property (strong, nonatomic) UIView *showView;             // ----- step : 4
-
+@property (nonatomic, strong) NSArray *barrageArr;
 @end
 
 @implementation ViewController
@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     
-    /*
+    
     //dataSource
     NSString *danmakufile = [[NSBundle mainBundle] pathForResource:@"file" ofType:nil];
     NSArray *fileArray = [NSArray arrayWithContentsOfFile:danmakufile];
@@ -32,7 +32,8 @@
     for (NSDictionary *dic in fileArray) {
         [dataArray2 addObject:dic[@"m"]];
     }
-
+    self.barrageArr = dataArray2;
+    /*
     // 解析弹幕标准数据 255402(弹幕时间戳),1(弹幕显示模式, 默认滚动模式),12(弹幕字体大小),DBFF00(弹幕字体颜色),19416565(发弹幕的用户id)
     NSMutableArray *dataArray3 = [@[] mutableCopy];
     for (NSDictionary *dic in fileArray) {
@@ -69,8 +70,9 @@
 // ----- step : 6
 #pragma mark - BarrageManagerDelegate
 - (id)barrageManagerDataSource {
-    int a = arc4random() % 10000;
-    NSString *str = [NSString stringWithFormat:@" %d年太久, 只争朝夕", a];
+    int a = arc4random() % self.barrageArr.count;
+//    NSString *str = [NSString stringWithFormat:@"%d年", a];     // 自定义的弹幕数据
+    NSString *str = _barrageArr[a];
     UIImage *backImage = [UIImage imageNamed:@"tx_danmu"];      // 设置弹幕个性背景图
     NSMutableAttributedString *attr = [[NSMutableAttributedString alloc] initWithString:str];
     [attr addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:NSMakeRange(0, str.length)];
@@ -90,6 +92,7 @@
     [[_manager barrageScenes] enumerateObjectsUsingBlock:^(ZWBarrageScene * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([obj.layer.presentationLayer hitTest:touchPoint]) {
             /* if barrage's type is ` ZWBarrageDisplayTypeVote ` or `ZWBarrageDisplayTypeImage`, add your code here*/
+            // 这里可以增加弹出框, 输入想要添加的弹幕, 将弹幕添加到弹幕数组barrageArr中即可
             [obj pause];
         }
     }];

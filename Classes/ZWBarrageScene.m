@@ -259,9 +259,9 @@
             _backImageView.hidden = false;
             if (_model.backImage !=nil) {
                 UIImage *img = (UIImage *)_model.backImage;
-                _backImageView.image = img;
+                _backImageView.image = [img stretchableImageWithLeftCapWidth:45 topCapHeight:0.1];
             }
-            _titleLabel.edgeInsets = UIEdgeInsetsMake(8, 54, 8, 54);
+            _titleLabel.edgeInsets = UIEdgeInsetsMake(5, 54, 5, 54);
             [_titleLabel sizeToFit];
             _titleLabel.layer.cornerRadius = 13;
             _titleLabel.backgroundColor = [UIColor clearColor];
