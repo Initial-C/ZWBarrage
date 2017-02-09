@@ -259,7 +259,7 @@
             _backImageView.hidden = false;
             if (_model.backImage !=nil) {
                 UIImage *img = (UIImage *)_model.backImage;
-                _backImageView.image = [img stretchableImageWithLeftCapWidth:45 topCapHeight:0.1];
+                _backImageView.image = [img stretchableImageWithLeftCapWidth:45 topCapHeight:0.01];
             }
             _titleLabel.edgeInsets = UIEdgeInsetsMake(5, 54, 5, 54);
             [_titleLabel sizeToFit];
