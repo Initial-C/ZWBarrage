@@ -1,6 +1,6 @@
 # ZWBarrage
 
-[![CI Status](http://img.shields.io/travis/Initial-C-William Chang/ZWBarrage.svg?style=flat)](https://travis-ci.org/Initial-C-William Chang/ZWBarrage)
+[![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg](https://travis-ci.org/Initial-C/ZWBarrage)
 [![Version](https://img.shields.io/cocoapods/v/ZWBarrage.svg?style=flat)](http://cocoapods.org/pods/ZWBarrage)
 [![License](https://img.shields.io/cocoapods/l/ZWBarrage.svg?style=flat)](http://cocoapodsZWBarrage.org/pods/ZWBarrage)
 [![Platform](https://img.shields.io/cocoapods/p/ZWBarrage.svg?style=flat)](http://cocoapods.org/pods/ZWBarrage)
