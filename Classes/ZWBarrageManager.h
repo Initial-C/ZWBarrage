@@ -11,6 +11,7 @@
 
 #import "ZWBarrageModel.h"
 #import "ZWBarrageScene.h"
+#import "ZWAVPlayer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -40,6 +41,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 // the view of show barrage
 @property (weak, nonatomic) UIView *bindingView;
+
+/**
+ It must be assigned at the back of the bindingView
+ */
+@property (nonatomic, copy) NSURL *playerURL;
 
 @property (assign, nonatomic) NSInteger scrollSpeed;
 
@@ -75,6 +81,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Prevent memory leaks
 - (void)toDealloc;
+
+- (void)toDeinitPlayer;
 
 @end
 

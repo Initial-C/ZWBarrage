@@ -17,6 +17,7 @@
 		52552EAE1DEB3CBF00D3A931 /* SubController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52552EAD1DEB3CBF00D3A931 /* SubController.m */; };
 		52552EB01DEB3EDF00D3A931 /* house.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 52552EAF1DEB3EDF00D3A931 /* house.jpg */; };
 		52552EB21DEB3EE400D3A931 /* file in Resources */ = {isa = PBXBuildFile; fileRef = 52552EB11DEB3EE400D3A931 /* file */; };
+		526C89EA1EC587E000B0EB92 /* Cribug.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 526C89E91EC587D800B0EB92 /* Cribug.mp4 */; };
 		65EEBCBED0B38C81DEC53FDB /* libPods-ZWBarrage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18078826143A4FF147B70D8A /* libPods-ZWBarrage.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		52552EAD1DEB3CBF00D3A931 /* SubController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubController.m; sourceTree = "<group>"; };
 		52552EAF1DEB3EDF00D3A931 /* house.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = house.jpg; sourceTree = "<group>"; };
 		52552EB11DEB3EE400D3A931 /* file */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = file; sourceTree = "<group>"; };
+		526C89E91EC587D800B0EB92 /* Cribug.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cribug.mp4; sourceTree = "<group>"; };
 		7C2CC379E4BE8A50A17C324A /* Pods-ZWBarrage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZWBarrage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZWBarrage/Pods-ZWBarrage.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 		52552E8C1DEB3BA300D3A931 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				526C89E91EC587D800B0EB92 /* Cribug.mp4 */,
 				52552EAF1DEB3EDF00D3A931 /* house.jpg */,
 				52552EB11DEB3EE400D3A931 /* file */,
 				52552E8D1DEB3BA300D3A931 /* main.m */,
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526C89EA1EC587E000B0EB92 /* Cribug.mp4 in Resources */,
 				52552EB01DEB3EDF00D3A931 /* house.jpg in Resources */,
 				52552EB21DEB3EE400D3A931 /* file in Resources */,
 				52552E9C1DEB3BA400D3A931 /* LaunchScreen.storyboard in Resources */,

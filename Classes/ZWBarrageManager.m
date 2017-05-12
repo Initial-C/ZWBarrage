@@ -14,6 +14,8 @@
 
 @property (assign, nonatomic) ZWBarrageStatusType currentStatus;
 
+@property (nonatomic, strong) ZWAVPlayer *avplayerV;
+
 @property (strong, nonatomic) NSMutableArray *cachePool;
 
 @property (strong, nonatomic) NSMutableArray *barrageScene;
@@ -108,7 +110,15 @@ static ZWBarrageManager *instance;
 }
 
 #pragma mark - method
-
+- (void)setPlayerURL:(NSURL *)playerURL {
+    if (_bindingView != nil) {
+        if (_avplayerV != nil) {
+            [_avplayerV removeFromSuperview];;
+        }
+        self.avplayerV = [[ZWAVPlayer alloc] initWithFrame:_bindingView.bounds withPlayerURL:playerURL];
+        [self.bindingView addSubview:_avplayerV];
+    }
+}
 - (void)buildBarrageScene {
     _dateNow = [NSDate date];
     NSTimeZone *zone = [NSTimeZone systemTimeZone];
@@ -294,6 +304,10 @@ static ZWBarrageManager *instance;
         [_barrageScene removeAllObjects];
     }
     
+}
+
+- (void)toDeinitPlayer {
+    [self.avplayerV setDeinit];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZWBarrage"
-  s.version      = "0.0.6.1"
+  s.version      = "0.0.7"
   s.summary      = "ZWBarrage is simple and easy to use, expand the individual strong base barrage"
   s.homepage     = "https://github.com/Initial-C"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
@@ -43,6 +43,6 @@ Pod::Spec.new do |s|
   # s.libraries = "iconv", "xml2"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    
+
 
 end

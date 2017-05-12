@@ -1,5 +1,5 @@
 PODS:
-  - ZWBarrage (0.0.3)
+  - ZWBarrage (0.0.7)
 
 DEPENDENCIES:
   - ZWBarrage (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ZWBarrage: 9af3835370512a08979efdf1980d1f2041216550
+  ZWBarrage: cde27fb07318dc7c1ede845f575058237ad9c3e3
 
 PODFILE CHECKSUM: ee4b6195c3f55996beb1ab18736acff2e07bc32b
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0.beta.3

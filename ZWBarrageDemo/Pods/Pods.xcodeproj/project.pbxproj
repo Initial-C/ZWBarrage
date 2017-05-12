@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16AA19021C3FB888BC0AFAE22EC41881 /* ZWEdgeInsetsLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = ED789DFB684F9A5DF131E91B7D335D58 /* ZWEdgeInsetsLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		232420609BE7B86EDFE5832964A850A2 /* ZWBarrageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD662C71D7567497B81C180B1B2ABD4 /* ZWBarrageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2E154294A53C736662218A4EE8ADFB5F /* ZWBarrageUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F6422B63A11574C0C23946BFA7936D /* ZWBarrageUserModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		3780F1F8A42E2A0F86E5E6E40160722B /* ZWBarrage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE6DE9022321819A0F7D41E1C939AA4 /* ZWBarrage-dummy.m */; };
-		3B01C2C6C94A7967FEBA183B25AD4864 /* ZWBarrageScene.h in Headers */ = {isa = PBXBuildFile; fileRef = B921865BA8FDC27ADA571FF8E6642257 /* ZWBarrageScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AB386A472749FA66FFF90E9198A51C7 /* ZWBarrageUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A6B49E6BAD4500204B08ADE655A1CC2B /* ZWBarrageUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A67C78BDD68318D142417A2AB5E7A89 /* ZWBarrageEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C3244F601FD33B12264E2B5F473F5F2 /* ZWBarrageEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2737371FB01DDE184805361F03FFCA3B /* ZWAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DE99F1B3BC9FCBDFEF5C4A2971F6EFA /* ZWAVPlayer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3E23E219713622A494128AF2CFE56216 /* Pods-ZWBarrage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EF5EE859F7698779A4A943F0657FC7 /* Pods-ZWBarrage-dummy.m */; };
-		50F06542F062D7DF0BF422DC1266A710 /* ZWEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B31F0961AC6D80FCAA28914250907D40 /* ZWEdgeInsetsLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		6D17A040F9D82BF26F3AAE137D3BD5E6 /* ZWBarrageEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 997BFC1089E08B1D38AA54D41DC5256D /* ZWBarrageEnum.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7524C63F26DC359645BAB08689FE8BC3 /* ZWBarrageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 662D56FDF400EE1D26CA9D3B35974F61 /* ZWBarrageModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4E5A6BA51E912714EDB4E9D3D9E2D38D /* ZWBarrageScene.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC28692225AB210FB40E8F58C59F661 /* ZWBarrageScene.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7470137610BDBE120A632D61930DB094 /* ZWBarrageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E4E3E7DC1F42C2B009F7B1FBF32AB /* ZWBarrageManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		846D31ED069002ECA5C704558EAA976F /* ZWBarrageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC8973C4B92B2D3B1640327A7FB657B /* ZWBarrageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D2A50E35FF03F7B2EEEC97AC45B0F1A /* ZWAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D7C901C562EE84C3C9EDE202DE4E7EA /* ZWAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE41270A27597B6AB2C13E06695C4ED /* ZWEdgeInsetsLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C82F2F4EEBFA5675407F7A9D05CC8B2E /* ZWEdgeInsetsLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		959D5137D9E04FCD0B52B1D056E6B9A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
 		9EE127B482222A37D9BD6C97553803F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		B8CF5565B14A0D8D4D30634BF52BE9CB /* ZWBarrageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F69A262A6D003D95A23FB24C5CBD86C /* ZWBarrageModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BBA66CC7C3873EB38429C5397893585E /* ZWBarrageUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E7668E0ED0077AC7BEE9BE6379D293F4 /* ZWBarrageUserModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C91B624695B24F5212BC6F7013841F0D /* ZWBarrageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B536933B2332A8B9709D80EC42278A3 /* ZWBarrageScene.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F1B25F3D4C3759447D7F8A1F4304CE06 /* ZWBarrageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D55382C644B60231BDFD2569E510DBE2 /* ZWBarrageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9FDE11F95DBF1437C5EF2A7430E0F7A3 /* ZWBarrageScene.m in Sources */ = {isa = PBXBuildFile; fileRef = C0EF2D627337EB4214671608F125BF77 /* ZWBarrageScene.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A235C5F80E783B382ED1030C03D9DF92 /* ZWBarrageUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBCE604EA13294E979F5DE247817C8E /* ZWBarrageUserModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A7F9ACAE70034285BA6DF82B17D04CDD /* ZWBarrageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B55C47A7A1897E1ABC21C48F36ABA0BD /* ZWBarrageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B137A95672CCE8E164C254C7C75C0464 /* ZWBarrageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 89DF5F4031C2F435A51EDC3FC4FAFB68 /* ZWBarrageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB9F94C3D10798D6605519B3925723A9 /* ZWEdgeInsetsLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7943DC243823707537EB92FF8F2541 /* ZWEdgeInsetsLabel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D3BBD8D1C8008B051641DC338AFBD8B3 /* ZWBarrageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D128B8CD887161373D8A4C1E2D5A3610 /* ZWBarrageModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		DBA3A3496A2FBD89831C110F5FD83363 /* ZWBarrage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA8A262360AF03FE100AA7872FC1924 /* ZWBarrage-dummy.m */; };
 		F3BFA9EED68A90BED5E8E4ACFE598A6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		F5707E6BF009E4DD9A2AF03490C1378A /* ZWBarrageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A4A4BBBE9DA424CDDCCE8875E350E5 /* ZWBarrageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,33 +39,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09A4A4BBBE9DA424CDDCCE8875E350E5 /* ZWBarrageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageManager.h; sourceTree = "<group>"; };
 		0AC3C31435F536765FE80A87E5A3755B /* Pods-ZWBarrage-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWBarrage-frameworks.sh"; sourceTree = "<group>"; };
 		0D5D9335E6E504E265017A258C1731B5 /* Pods-ZWBarrage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWBarrage.release.xcconfig"; sourceTree = "<group>"; };
+		0D7C901C562EE84C3C9EDE202DE4E7EA /* ZWAVPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWAVPlayer.h; sourceTree = "<group>"; };
 		0DE1CC5DFB5D593F4FD3D3790FBBED78 /* Pods-ZWBarrage-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZWBarrage-resources.sh"; sourceTree = "<group>"; };
 		18EF5EE859F7698779A4A943F0657FC7 /* Pods-ZWBarrage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZWBarrage-dummy.m"; sourceTree = "<group>"; };
+		1C3244F601FD33B12264E2B5F473F5F2 /* ZWBarrageEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageEnum.h; sourceTree = "<group>"; };
 		1DD2A0BE2AA2425BEE439E96147AD5F9 /* libZWBarrage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libZWBarrage.a; path = libZWBarrage.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		57F6422B63A11574C0C23946BFA7936D /* ZWBarrageUserModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageUserModel.m; sourceTree = "<group>"; };
-		5B1BD958FFBC78712F493A3C4EBD6F13 /* ZWBarrage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWBarrage.xcconfig; sourceTree = "<group>"; };
+		2D7943DC243823707537EB92FF8F2541 /* ZWEdgeInsetsLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWEdgeInsetsLabel.m; sourceTree = "<group>"; };
+		4A8E4E3E7DC1F42C2B009F7B1FBF32AB /* ZWBarrageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageManager.m; sourceTree = "<group>"; };
+		5BBC8E9BB0AA8C781D252BF0799C44B4 /* ZWBarrage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWBarrage-prefix.pch"; sourceTree = "<group>"; };
+		5CC28692225AB210FB40E8F58C59F661 /* ZWBarrageScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageScene.h; sourceTree = "<group>"; };
+		6051577FC308BBCA25C0438CAC2B37CE /* ZWBarrage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZWBarrage.xcconfig; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		662D56FDF400EE1D26CA9D3B35974F61 /* ZWBarrageModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageModel.m; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		7F69A262A6D003D95A23FB24C5CBD86C /* ZWBarrageModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageModel.h; sourceTree = "<group>"; };
+		89DF5F4031C2F435A51EDC3FC4FAFB68 /* ZWBarrageKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageKit.h; sourceTree = "<group>"; };
+		8DE99F1B3BC9FCBDFEF5C4A2971F6EFA /* ZWAVPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWAVPlayer.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		997BFC1089E08B1D38AA54D41DC5256D /* ZWBarrageEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageEnum.h; sourceTree = "<group>"; };
-		9B536933B2332A8B9709D80EC42278A3 /* ZWBarrageScene.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageScene.m; sourceTree = "<group>"; };
 		9F7B1997722791C89F0D56220D3F07D3 /* libPods-ZWBarrage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ZWBarrage.a"; path = "libPods-ZWBarrage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A652861FFF2822DC265A9F9454F793CA /* Pods-ZWBarrage-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZWBarrage-acknowledgements.plist"; sourceTree = "<group>"; };
-		B31F0961AC6D80FCAA28914250907D40 /* ZWEdgeInsetsLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWEdgeInsetsLabel.m; sourceTree = "<group>"; };
-		B921865BA8FDC27ADA571FF8E6642257 /* ZWBarrageScene.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageScene.h; sourceTree = "<group>"; };
-		BBD662C71D7567497B81C180B1B2ABD4 /* ZWBarrageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageManager.m; sourceTree = "<group>"; };
+		A6B49E6BAD4500204B08ADE655A1CC2B /* ZWBarrageUserModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageUserModel.h; sourceTree = "<group>"; };
+		AEBCE604EA13294E979F5DE247817C8E /* ZWBarrageUserModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageUserModel.m; sourceTree = "<group>"; };
+		B55C47A7A1897E1ABC21C48F36ABA0BD /* ZWBarrageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageManager.h; sourceTree = "<group>"; };
 		BCE2272791DC3ADFAD11D8D8DB998326 /* Pods-ZWBarrage-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZWBarrage-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BCE6DE9022321819A0F7D41E1C939AA4 /* ZWBarrage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWBarrage-dummy.m"; sourceTree = "<group>"; };
-		D55382C644B60231BDFD2569E510DBE2 /* ZWBarrageKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageKit.h; sourceTree = "<group>"; };
-		D63A1C18C4BDAD8DA7128C2E8D5C9DDB /* ZWBarrage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZWBarrage-prefix.pch"; sourceTree = "<group>"; };
-		E7668E0ED0077AC7BEE9BE6379D293F4 /* ZWBarrageUserModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageUserModel.h; sourceTree = "<group>"; };
-		ED789DFB684F9A5DF131E91B7D335D58 /* ZWEdgeInsetsLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWEdgeInsetsLabel.h; sourceTree = "<group>"; };
+		C0EF2D627337EB4214671608F125BF77 /* ZWBarrageScene.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageScene.m; sourceTree = "<group>"; };
+		C82F2F4EEBFA5675407F7A9D05CC8B2E /* ZWEdgeInsetsLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWEdgeInsetsLabel.h; sourceTree = "<group>"; };
+		D128B8CD887161373D8A4C1E2D5A3610 /* ZWBarrageModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZWBarrageModel.m; sourceTree = "<group>"; };
+		ECC8973C4B92B2D3B1640327A7FB657B /* ZWBarrageModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZWBarrageModel.h; sourceTree = "<group>"; };
 		FB9011A0DCC1D9B84B0E422EBB87D314 /* Pods-ZWBarrage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZWBarrage.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA8A262360AF03FE100AA7872FC1924 /* ZWBarrage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZWBarrage-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		10197A328BBB84E77D0AA9497E224EE4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D7C901C562EE84C3C9EDE202DE4E7EA /* ZWAVPlayer.h */,
+				8DE99F1B3BC9FCBDFEF5C4A2971F6EFA /* ZWAVPlayer.m */,
+				1C3244F601FD33B12264E2B5F473F5F2 /* ZWBarrageEnum.h */,
+				89DF5F4031C2F435A51EDC3FC4FAFB68 /* ZWBarrageKit.h */,
+				B55C47A7A1897E1ABC21C48F36ABA0BD /* ZWBarrageManager.h */,
+				4A8E4E3E7DC1F42C2B009F7B1FBF32AB /* ZWBarrageManager.m */,
+				ECC8973C4B92B2D3B1640327A7FB657B /* ZWBarrageModel.h */,
+				D128B8CD887161373D8A4C1E2D5A3610 /* ZWBarrageModel.m */,
+				5CC28692225AB210FB40E8F58C59F661 /* ZWBarrageScene.h */,
+				C0EF2D627337EB4214671608F125BF77 /* ZWBarrageScene.m */,
+				A6B49E6BAD4500204B08ADE655A1CC2B /* ZWBarrageUserModel.h */,
+				AEBCE604EA13294E979F5DE247817C8E /* ZWBarrageUserModel.m */,
+				C82F2F4EEBFA5675407F7A9D05CC8B2E /* ZWEdgeInsetsLabel.h */,
+				2D7943DC243823707537EB92FF8F2541 /* ZWEdgeInsetsLabel.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2F9E2FCA85EFD8912F3672F3FD611934 /* Pods-ZWBarrage */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,25 +144,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		43BD2CABBCAD2755CA015C35CBBEC83C /* ZWBarrage */ = {
+		4E2B7D833F936D123657BE82BB83C13E /* ZWBarrage */ = {
 			isa = PBXGroup;
 			children = (
-				9E9619217435BDFC81AD2B7423AF0778 /* Classes */,
-				4BD5DB282A85C302E624507A04DB1C06 /* Support Files */,
+				10197A328BBB84E77D0AA9497E224EE4 /* Classes */,
+				FCFA80A84D3B41FE58C8957B4554CCA0 /* Support Files */,
 			);
 			name = ZWBarrage;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		4BD5DB282A85C302E624507A04DB1C06 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5B1BD958FFBC78712F493A3C4EBD6F13 /* ZWBarrage.xcconfig */,
-				BCE6DE9022321819A0F7D41E1C939AA4 /* ZWBarrage-dummy.m */,
-				D63A1C18C4BDAD8DA7128C2E8D5C9DDB /* ZWBarrage-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "ZWBarrageDemo/Pods/Target Support Files/ZWBarrage";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -150,30 +165,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		9E9619217435BDFC81AD2B7423AF0778 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				997BFC1089E08B1D38AA54D41DC5256D /* ZWBarrageEnum.h */,
-				D55382C644B60231BDFD2569E510DBE2 /* ZWBarrageKit.h */,
-				09A4A4BBBE9DA424CDDCCE8875E350E5 /* ZWBarrageManager.h */,
-				BBD662C71D7567497B81C180B1B2ABD4 /* ZWBarrageManager.m */,
-				7F69A262A6D003D95A23FB24C5CBD86C /* ZWBarrageModel.h */,
-				662D56FDF400EE1D26CA9D3B35974F61 /* ZWBarrageModel.m */,
-				B921865BA8FDC27ADA571FF8E6642257 /* ZWBarrageScene.h */,
-				9B536933B2332A8B9709D80EC42278A3 /* ZWBarrageScene.m */,
-				E7668E0ED0077AC7BEE9BE6379D293F4 /* ZWBarrageUserModel.h */,
-				57F6422B63A11574C0C23946BFA7936D /* ZWBarrageUserModel.m */,
-				ED789DFB684F9A5DF131E91B7D335D58 /* ZWEdgeInsetsLabel.h */,
-				B31F0961AC6D80FCAA28914250907D40 /* ZWEdgeInsetsLabel.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		A985E818AFB6489C7550EE92EFF24F1B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				43BD2CABBCAD2755CA015C35CBBEC83C /* ZWBarrage */,
+				4E2B7D833F936D123657BE82BB83C13E /* ZWBarrage */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -196,20 +191,32 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		FCFA80A84D3B41FE58C8957B4554CCA0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6051577FC308BBCA25C0438CAC2B37CE /* ZWBarrage.xcconfig */,
+				FEA8A262360AF03FE100AA7872FC1924 /* ZWBarrage-dummy.m */,
+				5BBC8E9BB0AA8C781D252BF0799C44B4 /* ZWBarrage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "ZWBarrageDemo/Pods/Target Support Files/ZWBarrage";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B0A6A98C601A188612B1522C54B50206 /* Headers */ = {
+		911B6CE1849125F03B6757C5A2958E7D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D17A040F9D82BF26F3AAE137D3BD5E6 /* ZWBarrageEnum.h in Headers */,
-				F1B25F3D4C3759447D7F8A1F4304CE06 /* ZWBarrageKit.h in Headers */,
-				F5707E6BF009E4DD9A2AF03490C1378A /* ZWBarrageManager.h in Headers */,
-				B8CF5565B14A0D8D4D30634BF52BE9CB /* ZWBarrageModel.h in Headers */,
-				3B01C2C6C94A7967FEBA183B25AD4864 /* ZWBarrageScene.h in Headers */,
-				BBA66CC7C3873EB38429C5397893585E /* ZWBarrageUserModel.h in Headers */,
-				16AA19021C3FB888BC0AFAE22EC41881 /* ZWEdgeInsetsLabel.h in Headers */,
+				8D2A50E35FF03F7B2EEEC97AC45B0F1A /* ZWAVPlayer.h in Headers */,
+				1A67C78BDD68318D142417A2AB5E7A89 /* ZWBarrageEnum.h in Headers */,
+				B137A95672CCE8E164C254C7C75C0464 /* ZWBarrageKit.h in Headers */,
+				A7F9ACAE70034285BA6DF82B17D04CDD /* ZWBarrageManager.h in Headers */,
+				846D31ED069002ECA5C704558EAA976F /* ZWBarrageModel.h in Headers */,
+				4E5A6BA51E912714EDB4E9D3D9E2D38D /* ZWBarrageScene.h in Headers */,
+				0AB386A472749FA66FFF90E9198A51C7 /* ZWBarrageUserModel.h in Headers */,
+				8FE41270A27597B6AB2C13E06695C4ED /* ZWEdgeInsetsLabel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +227,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A001B4F04213C6C09B86993ABE80F421 /* Build configuration list for PBXNativeTarget "ZWBarrage" */;
 			buildPhases = (
-				ECFDF6F22BE1DDB8F4584413012AA57C /* Sources */,
+				3A4213376742B184AC54590A2D2C4A4C /* Sources */,
 				D1F42F5D722A61087F691BA84EAB2376 /* Frameworks */,
-				B0A6A98C601A188612B1522C54B50206 /* Headers */,
+				911B6CE1849125F03B6757C5A2958E7D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -278,24 +285,25 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3A4213376742B184AC54590A2D2C4A4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2737371FB01DDE184805361F03FFCA3B /* ZWAVPlayer.m in Sources */,
+				DBA3A3496A2FBD89831C110F5FD83363 /* ZWBarrage-dummy.m in Sources */,
+				7470137610BDBE120A632D61930DB094 /* ZWBarrageManager.m in Sources */,
+				D3BBD8D1C8008B051641DC338AFBD8B3 /* ZWBarrageModel.m in Sources */,
+				9FDE11F95DBF1437C5EF2A7430E0F7A3 /* ZWBarrageScene.m in Sources */,
+				A235C5F80E783B382ED1030C03D9DF92 /* ZWBarrageUserModel.m in Sources */,
+				BB9F94C3D10798D6605519B3925723A9 /* ZWEdgeInsetsLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D57D1A49627D5AFD88418A6B77CE259D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3E23E219713622A494128AF2CFE56216 /* Pods-ZWBarrage-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ECFDF6F22BE1DDB8F4584413012AA57C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3780F1F8A42E2A0F86E5E6E40160722B /* ZWBarrage-dummy.m in Sources */,
-				232420609BE7B86EDFE5832964A850A2 /* ZWBarrageManager.m in Sources */,
-				7524C63F26DC359645BAB08689FE8BC3 /* ZWBarrageModel.m in Sources */,
-				C91B624695B24F5212BC6F7013841F0D /* ZWBarrageScene.m in Sources */,
-				2E154294A53C736662218A4EE8ADFB5F /* ZWBarrageUserModel.m in Sources */,
-				50F06542F062D7DF0BF422DC1266A710 /* ZWEdgeInsetsLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +428,7 @@
 		};
 		C1A878BA48222C7F99DB1D8D43588DB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1BD958FFBC78712F493A3C4EBD6F13 /* ZWBarrage.xcconfig */;
+			baseConfigurationReference = 6051577FC308BBCA25C0438CAC2B37CE /* ZWBarrage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -466,7 +474,7 @@
 		};
 		D870F28C450932EB568700210DA86750 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B1BD958FFBC78712F493A3C4EBD6F13 /* ZWBarrage.xcconfig */;
+			baseConfigurationReference = 6051577FC308BBCA25C0438CAC2B37CE /* ZWBarrage.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

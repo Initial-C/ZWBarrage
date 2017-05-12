@@ -15,6 +15,9 @@
 @property (strong, nonatomic) ZWBarrageManager *manager;    // ----- step : 3
 @property (strong, nonatomic) UIView *showView;             // ----- step : 4
 @property (nonatomic, strong) NSArray *barrageArr;
+
+@property (nonatomic, strong) NSURL *url1;
+@property (nonatomic, strong) NSURL *url2;
 @end
 
 @implementation ViewController
@@ -57,9 +60,16 @@
     
     _manager = [ZWBarrageManager manager];
     _showView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, self.view.frame.size.width, 250)];
-    _showView.backgroundColor = [UIColor clearColor];
+    _showView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Cribug" ofType:@"mp4"];
+    self.url1 = [NSURL fileURLWithPath:path];
+    self.url2 = [NSURL URLWithString:@"http://113.107.44.146/ws.acgvideo.com/7/f4/17328922-1.mp4?wsTime=1494581048&platform=html5&wsSecret2=e8258abbcb84e35911c2c0ef44a8df89&oi=2015985690&rate=110&wshc_tag=0&wsts_tag=59156a06&wsid_tag=7829801a&wsiphost=ipdbm"];
+//    NSURL *url3 = (int)arc4random_uniform(2) == 1 ? url1 : url2;
+//    ZWAVPlayer *avplayerV = [[ZWAVPlayer alloc] initWithFrame:_showView.bounds withPlayerURL:url3];
+//    [_showView addSubview:avplayerV];
     [self.view addSubview:_showView];
     _manager.bindingView = _showView;
+    _manager.playerURL = _url1;                                         // 设置视频弹幕器视频源, 注: 必须在bindingView后赋值
     _manager.delegate = self;
     _manager.scrollSpeed = 50;
     _manager.memoryMode = ZWBarrageMemoryWarningModeHalf;               // 弹幕内存管理模式
@@ -133,6 +143,16 @@
     [_manager startScroll];
 }
 // ----- step : 0
+
+- (IBAction)changeSourceClick:(UIButton *)sender {
+    sender.selected = !sender.selected;
+    if (sender.isSelected) {
+        _manager.playerURL = _url2;
+    } else {
+        _manager.playerURL = _url1;
+    }
+}
+
 #pragma mark - Must do this!
 - (void)viewWillAppear:(BOOL)animated
 {
